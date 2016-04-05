@@ -2,12 +2,6 @@
 
 set -e
 
-# First install oh-my-zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-    echo "Cloning oh-myzsh"
-    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
-
 # Deploy each app config file.
 for f in `ls . `
 do
